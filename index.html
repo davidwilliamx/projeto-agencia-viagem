@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golobe Agência de Viagens</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="container-fluid">
+        <header id="header">
+            <div class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#" class="nav__list-link">Destinos</a></li>
+                    <li class="nav__list-item"><a href="#" class="nav__list-link">Estadias</a></li>
+                </ul>
+            </div>
+            <div class="header__logo">
+                <a href="#" class="logo__container">
+                    <img src="./assets/images/logo-header.svg" alt="Golobe Agência de viagens" class="logo__img">
+                </a>
+            </div>
+            <div class="header__login">
+                <form class="login__form">
+                    <ul class="login__container">
+                        <li class="login__item"><a href="#" class="login__link">Login</a></li>
+                        <li class="login__item"><a href="#" class="login__link">Cadastrar</a></li>
+                    </ul>
+                </form>
+            </div>
+        </header>
+        <section id="cta">
+            <img src="./assets/images/cta05x.png" alt="Imagem frente do barco em uma lagoa com paisagem ao fundo." class="cta__bg">
+            <p class="cta__subtitle">Ajudando outras pessoas</p>
+            <h1 class="cta__title">viver &amp; viajar</h1>
+            <p class="cta__offer">Ofertas especiais para atender aos seus planos</p>
+        </section>
+        <section id="stay">
+            <div class="stay__container">
+                <form class="stay__form">
+                    <div class="row">
+                        <input type="text" name="Destino" id="stay__form-destino" placeholder="Origem">
+                        <input type="text" name="Saida" id="stay__form-saida" placeholder="Destino">
+                        <select name="passageiro" id="stay__form-passageiro">
+                            <option value="1 Hóspede Adulto">1 Hóspede Adulto</option>
+                            <option value="2 Hóspedes Adultos">2 Hóspedes Adultos</option>
+                            <option value="3 Hóspedes Adultos">3 Hóspedes Adultos</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <button class="stay__form-submit">Mostrar Destinos</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="destiny">
+            <div class="destiny__header">
+                <h2 class="destiny__title">Planeje sua viagem perfeita</h2>
+                <p class="destiny__text">Pesquise destinos e lugares nos nossos destinos mais populares</p>
+                <button class="destiny__btn">Veja mais lugares</button>
+            </div>
+            <div class="destiny__body">
+                <!-- Inicio card -->
+                <div class="destiny__card card">
+                    <img src="./assets/images/istanbul-turkey.png" alt="Imagem campanário istambul" class="destiny__card-image">
+                    <div class="destiny__card-body">
+                        <h4 class="destiny__card-title">Istanbul, Turquia</h4>
+                        <ul class="destiny__card-list">
+                            <li class="destiny__card-item"><a href="#" class="destiny__card-link">Atrações</a></li>
+                            <li class="destiny__card-item"><a href="#" class="destiny__card-link">Hotéis</a></li>
+                            <li class="destiny__card-item"><a href="#" class="destiny__card-link">Resorts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fim card -->
+            </div>
+        </section>
+        <section id="blog">
+            <div class="blog__atracoes">
+                <img src="./assets/images/hotels5x.png" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina." class="blog__atracoes-image">
+                <h3 class="blog__atracoes-title">Atrações</h3>
+                <div class="blog__atracoes-body">
+                    <p class="blog__atracoes-text">Pesquise atrações e os pontos turísticos mais famosos para visitar.</p>
+                    <button class="blog__atracoes-btn">Mostrar Atrações</button>
+                </div>
+            </div>
+            <div class="blog__hoteis">
+                <img src="./assets/images/hotels5x.png" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina." class="blog__hoteis-image">
+                <h3 class="blog__hoteis-title">Hotéis</h3>
+                <div class="blog__hoteis-body">
+                    <p class="blog__hoteis-text">Pesquise os melhores e mais luxuosos hotéis para se hospedar durante sua viagem.</p>
+                    <button class="blog__hoteis-btn">Mostrar Hotéis</button>
+                </div>
+            </div>
+        </section>
+        <section id="review">
+            <div class="review__header">
+                <h2 class="review__title">Reviews</h2>
+                <p class="review__text">O que as pessoas dizem sobre os serviços da Golobe</p>
+                <button class="review__btn">Veja todos</button>
+            </div>
+            <div class="review__content">
+                <div class="review__card">
+                    <div class="review__card-header">
+                        <h4 class="review__card-title">"Um verdadeiro senso de comunidade, cultivado"</h4>
+                        <p class="review__card-text">Agradeço muito a ajuda e o apoio da equipe durante esses momentos difíceis. Parabéns à Katie por me ajudar sempre, mesmo quando eu estava fora do país. E sempre disponível quando necessário.</p>
+                        <button type="button" title="Veja mais" class="review__card-btn">Veja mais</button>
+                    </div>
+                    <div class="review__card-stars"></div>
+                    <div class="review__card-author">
+                        <h5 class="review__card-name">Olga</h5>
+                        <p class="review__card-empresa">Weave Studios - Kai Tak</p>
+                    </div>
+                    <picture>
+                        <img src="./assets/images/feedback036x.png" alt="Feedback Image">
+                    </picture>
+                </div>
+                <div class="review__card">
+                    <div class="review__card-header">
+                        <h4 class="review__card-title">"As instalações são excelentes. Limpas, elegantes e bem iluminadas."</h4>
+                        <p class="review__card-text">“Um verdadeiro senso de comunidade, nutrido "Agradeço muito a ajuda e o apoio da equipe durante esses tempos difíceis. Parabéns à Katie por me ajudar sempre, mesmo quando eu estava fora do país. E sempre disponível quando necessário.Ver maisOlgaWeave Studios - Kai TakGoogle.</p>
+                        <button type="button" title="Veja mais" class="review__card-btn">Veja mais</button>
+                    </div>
+                    <div class="review__card-stars"></div>
+                    <div class="review__card-author">
+                        <h5 class="review__card-name">Thomas</h5>
+                        <p class="review__card-empresa">Weave Studios - Olímpia</p>
+                    </div>
+                    <picture>
+                        <img src="./assets/images/feedback136x.png" alt="Feedback Image">
+                    </picture>
+                </div>
+                <div class="review__card">
+                    <div class="review__card-header">
+                        <h4 class="review__card-title">"Um verdadeiro senso de comunidade, cultivado"</h4>
+                        <p class="review__card-text">Agradeço muito a ajuda e o apoio da equipe durante esses momentos difíceis. Parabéns à Katie por me ajudar sempre, mesmo quando eu estava fora do país. E sempre disponível quando necessário.</p>
+                        <button type="button" title="Veja mais" class="review__card-btn">Veja mais</button>
+                    </div>
+                    <div class="review__card-stars"></div>
+                    <div class="review__card-author">
+                        <h5 class="review__card-name">Olga</h5>
+                        <p class="review__card-empresa">Weave Studios - Kai Tak</p>
+                    </div>
+                    <picture>
+                        <img src="./assets/images/feedback236x.png" alt="Feedback Image">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="newsletter__header">
+                <h2 class="newsletter__title">Assine nossa Newsletter</h2>
+                <p class="newsletter__subtitle">O Viajante</p>
+                <p class="newsletter__text">Inspire-se! Receba descontos em viagens, dicas e histórias dos bastidores.</p>
+            </div>
+            <div class="newsletter__body">
+                <form class="newsletter__form">
+                    <input type="email" name="Newsletter email" id="newsletter__form-email" placeholder="Seu endereço e-mail">
+                    <input type="button" value="Assine" class="newsletter__form-btn">
+                </form>
+            </div>
+            <picture class="newsletter__image">
+                <img src="./assets/images/emojione-v1_open-mailbox-with-lowered-flag.svg" alt="Mailbox ícone">
+            </picture>
+        </section>
+        <footer id="footer">
+            <div class="footer__content">
+                <div class="footer__social">
+                    <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="footer__logo">
+                    <ul class="footer__social-lista">
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/images/akar-icons_facebook-fill.svg" alt="Logo Facebook" class="footer__social-icons">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/images/akar-icons_twitter-fill.svg" alt="Logo Twitter" class="footer__social-icons">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/images/akar-icons_youtube-fill.svg" alt="Logo Youtube" class="footer__social-icons">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/images/ant-design_instagram-filled.svg" alt="Logo Instagram" class="footer__social-icons">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__destinations">
+                    <h5 class="footer__destinations-title">Nossos Destinos</h5>
+                    <ul class="footer__destinations-lista">
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Canadá</a></li>
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Alaska</a></li>
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">França</a></li>
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Islândia</a></li>
+                    </ul>
+                </div>
+                <div class="footer__activities">
+                    <h5 class="footer__activities-title">Nossas Atividades</h5>
+                    <ul class="footer__activities-lista">
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Luzes do Norte</a></li>
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Cruzeiro &amp; vela </a></li>
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Atividades Múltiplas</a></li>
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Caiaque</a></li>
+                    </ul>
+                </div>
+                <div class="footer__blog">
+                    <h5 class="footer__blog-title">Blogs de viagem</h5>
+                    <ul class="footer__blog-lista">
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Bali</a></li>
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Canadá </a></li>
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Peru</a></li>
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Argentina</a></li>
+                    </ul>
+                </div>
+                <div class="footer__sobre">
+                    <h5 class="footer__sobre-title">Nossa Empresa</h5>
+                    <ul class="footer__sobre-lista">
+                        <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Nossa História</a></li>
+                        <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contato">
+                    <h5 class="footer__contato-title">Entre em contato conosco</h5>
+                    <ul class="footer__contato-lista">
+                        <li class="footer__contato-item"><a href="#" class="footer__contato-link">Nossa História</a></li>
+                        <li class="footer__contato-item"><a href="#" class="footer__contato-link">Trabalhe Conosco </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

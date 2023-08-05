@@ -1,0 +1,216 @@
+@font-face {
+    font-family: texto-regular;
+    src: url(/assets/fonts/montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: texto-medium;
+    src: url(/assets/fonts/montserrat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: texto-semi;
+    src: url(/assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: texto-bold;
+    src: url(/assets/fonts/montserrat/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: titulo-regular;
+    src: url(/assets/fonts/tgextended/TGRegular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: titulo-bold;
+    src: url(/assets/fonts/tgextended/TGBold.otf);
+    font-weight: 700;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --tituloRegularFont: titulo-regular;
+    --tituloBoldFont: titulo-bold;
+    --textoRegularFont: texto-regular;
+    --textoMediumFont: texto-medium;
+    --textoSemiFont: texto-semi;
+    --textoBoldFont: texto-bold;
+    --blackishGreen: #112211;
+    --mintGreen: #8DD3BB;
+    --salmon: #FF8682;
+    --neutrals: #FFFFFF;
+    --black: #000000;
+    --blackish: #1C1B1F;
+}
+.nav__list-link {
+    font-family: var(--textoSemiFont);
+    text-decoration: none;
+}
+.login__link {
+    font-family: var(--textoSemiFont);
+    text-decoration: none;
+}
+.cta__title {
+    font-family: var(--tituloBoldFont);
+}
+.cta__subtitle {
+    font-family: var(--tituloBoldFont);
+}
+.cta__offer {
+    font-family: var(--textoSemiFont);
+}
+#stay__form-destino {
+    font-family: var(--textoRegularFont);
+}
+#stay__form-destino::placeholder, #stay__form-saida::placeholder {
+    font-family: var(--textoRegularFont);
+    color: var(--blackish);
+}
+#stay__form-passageiro {
+    font-family: var(--textoRegularFont);
+    color: var(--blackish);
+}
+.stay__form-submit {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    background-color: var(--mintGreen);
+}
+.destiny__title {
+    font-family: var(--textoSemiFont);
+    color: var(--black);
+}
+.destiny__text {
+    font-family: var(--textoRegularFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.7;
+}
+.destiny__btn {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    background-color: var(--neutrals);
+    border: 1px solid var(--mintGreen);
+}
+.destiny__card-title {
+    font-family: var(--textoSemiFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.7;
+}
+.destiny__card-link {
+    color: var(--blackish-green, #121);
+    font-family: var(--textoMediumFont);
+    text-decoration: none;
+}
+.blog__atracoes-title {
+    font-family: var(--tituloBoldFont);
+}
+.blog__atracoes-text {
+    font-family: var(--textoRegularFont);
+}
+.blog__atracoes-btn {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    background-color: var(--mintGreen);
+}
+.blog__hoteis-title {
+    font-family: var(--tituloBoldFont);
+}
+.blog__hoteis-text {
+    font-family: var(--textoRegularFont);
+}
+.blog__hoteis-btn {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    background-color: var(--mintGreen);
+}
+.review__title {
+    font-family: var(--textoSemiFont);
+    color: var(--black);
+}
+.review__text {
+    font-family: var(--textoRegularFont);
+    color: var(--black);
+}
+.review__btn {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    background-color: var(--neutrals);
+    border: 1px solid var(--mintGreen);
+}
+.review__card-title {
+    font-family: var(--tituloBoldFont);
+    color: var(--blackish-green, #121);
+}
+.review__card-text {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.5;
+}
+.review__card-btn {
+    font-family: var(--tituloBoldFont);
+    color: var(--blackish-green, #121);
+    border: 0;
+}
+.review__card-name {
+    font-family: var(--tituloBoldFont);
+    color: var(--blackish-green, #121);
+}
+.review__card-empresa {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.5;
+}
+.newsletter__title {
+    font-family: var(--tituloBoldFont);
+    color: var(--blackish-green, #121);
+}
+.newsletter__subtitle {
+    font-family: var(--tituloBoldFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.8;
+}
+.newsletter__text {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.7;
+}
+.newsletter__form-email {
+    color: var(--blackish);
+    font-family: var(--textoRegularFont);
+    border-radius: 4px 4px 0px 0px;;
+}
+#newsletter__form-email::placeholder {
+    color: var(--blackish);
+    font-family: var(--textoRegularFont);
+}
+.newsletter__form-btn {
+    font-family: var(--textoRegularFont);
+    color: var(--neutrals);
+    border-radius: 4px;
+    background: var(--blackish-green, #121);
+}
+.footer__social-icons {
+    color: var(--blackishGreen);
+}
+.footer__destinations-title,
+.footer__activities-title,
+.footer__blog-title,
+.footer__sobre-title,
+.footer__contato-title {
+    font-family: var(--tituloBoldFont);
+    color: var(--blackish-green, #121);
+}
+.footer__destinations-link,
+.footer__activities-link,
+.footer__blog-link,
+.footer__sobre-link,
+.footer__contato-link {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.7;
+    text-decoration: none;
+}
