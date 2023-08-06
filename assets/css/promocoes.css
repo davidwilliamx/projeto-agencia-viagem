@@ -1,0 +1,77 @@
+.promocoes__title {
+    font-family: var(--textoSemiFont);
+    color: var(--black);
+    height: 2.25rem;
+    align-self: stretch;
+    font-style: normal;
+    line-height: normal;
+}
+
+.promocoes__text {
+    font-family: var(--textoRegularFont);
+    color: var(--blackish-green, #121);
+    opacity: 0.7;
+    align-self: stretch;
+    font-style: normal;
+    line-height: normal;
+}
+
+.promocoes__btn {
+    font-family: var(--textoMediumFont);
+    color: var(--blackish-green, #121);
+    background-color: var(--neutrals);
+    border-radius: 0.25rem;
+    border: 1px solid var(--mint-green, #8DD3BB);
+    cursor: pointer;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.promocoes__card-title {
+    font-family: var(--textoSemiFont);
+    color: var(--blackish-green, #121);
+    align-self: stretch;
+    font-style: normal;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.promocoes__card-link {
+    color: var(--blackish-green, #121);
+    font-family: var(--textoMediumFont);
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+}
+.promocoes__card-image {
+    width: 5.625rem;
+    height: 5.625rem;
+}
+.card__promocao {
+    display: flex;
+    height: 26.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7.5rem;
+    flex: 1 0 0;
+    border-radius: 1.25rem;
+    background: var(--mint-green, #8DD3BB);
+}
+.promocao__btn {
+    display: flex;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+    border-radius: 0.25rem;
+    background: var(--neutrals, #FFF);
+}

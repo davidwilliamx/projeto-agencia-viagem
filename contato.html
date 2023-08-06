@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golobe Agência de Viagens - Promoções</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/destinos.css">
+    <link rel="stylesheet" href="./assets/css/promocoes.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <main id="pagina">
+        <header id="header" class="row">
+            <nav class="navbar navbar-expand-sm bg-transparent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav__list-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__list-link" href="promocoes.html">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="img-fluid logo__header">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__list-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__list-link" href="#">Cadastrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="cta" class="mb-5">
+        <div class="row">
+            <div class="card p-0 border-0 container-fluid">
+                <img src="./assets/images/cta1x.png" alt="Imagem frente do barco em uma lagoa com paisagem ao fundo." class="card-img img-fluid">
+                <div class="card-img-overlay d-flex justify-content-center flex-column align-items-center gap-1">
+                    <p class="cta__subtitle">Ajudando outras pessoas</p>
+                    <h1 class="cta__title">viver &amp; viajar</h1>
+                    <p class="cta__offer">Ofertas especiais para atender aos seus planos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Endereço 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Estado</label>
+          <select id="inputState" class="form-select">
+            <option selected>Escolha...</option>
+            <option>Pedido</option>
+            <option>Elogio</option>
+            <option>Dúvida</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Aceito os termos
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Entrar</button>
+        </div>
+      </form>
+</main>
+<footer id="footer">
+    <div class="footer__content row">
+        <div class="col-sm-6">
+            <section id="newsletter">
+                <div class="newsletter__header">
+                    <h2 class="newsletter__title h2">Assine nossa Newsletter</h2>
+                    <p class="newsletter__subtitle">O Viajante</p>
+                    <p class="newsletter__text">Inspire-se! Receba descontos em viagens, dicas e histórias dos bastidores.</p>
+                </div>
+                <div class="newsletter__body">
+                    <form class="newsletter__form">
+                        <input type="email" name="Newsletter email" id="newsletter__form-email" placeholder="Seu endereço e-mail">
+                        <input type="button" value="Assine" class="newsletter__form-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-6">
+            <div class="newsletter__image">
+                <img src="./assets/images/emojione-v1_open-mailbox-with-lowered-flag.svg" alt="Mailbox ícone" class="img-fluid">
+            </div>
+        </div>
+        <div class="container-fluid footer__links">
+            <div class="footer__social mb-5">
+                <div class="row my-5">
+                    <div class="col">
+                        <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="footer__logo text-center">
+                    </div>
+                </div>
+                <ul class="footer__social-lista d-flex gap-5">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/akar-icons_facebook-fill.svg" alt="Logo Facebook" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/akar-icons_twitter-fill.svg" alt="Logo Twitter" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/akar-icons_youtube-fill.svg" alt="Logo Youtube" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/ant-design_instagram-filled.svg" alt="Logo Instagram" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-group">
+                <div class="footer__destinations mx-2">
+                    <h5 class="footer__destinations-title h5">Nossos Destinos</h5>
+                    <ul class="footer__destinations-lista px-0">
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Canadá</a></li>
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Alaska</a></li>
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">França</a></li>
+                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Islândia</a></li>
+                    </ul>
+                </div>
+                <div class="footer__activities mx-2">
+                    <h5 class="footer__activities-title h5">Nossas Atividades</h5>
+                    <ul class="footer__activities-lista px-0">
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Luzes do Norte</a></li>
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Cruzeiro &amp; vela </a></li>
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Atividades Múltiplas</a></li>
+                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Caiaque</a></li>
+                    </ul>
+                </div>
+                <div class="footer__blog mx-2">
+                    <h5 class="footer__blog-title h5">Blogs de viagem</h5>
+                    <ul class="footer__blog-lista px-0">
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Bali</a></li>
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Canadá </a></li>
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Peru</a></li>
+                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Argentina</a></li>
+                    </ul>
+                </div>
+                <div class="footer__sobre mx-2">
+                    <h5 class="footer__sobre-title">Nossa Empresa</h5>
+                    <ul class="footer__sobre-lista px-0">
+                        <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Nossa História</a></li>
+                        <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contato mx-2">
+                    <h5 class="footer__contato-title">Entre em contato conosco</h5>
+                    <ul class="footer__contato-lista px-0">
+                        <li class="footer__contato-item"><a href="contato.html" class="footer__contato-link">Contato</a></li>
+                        <li class="footer__contato-item"><a href="#" class="footer__contato-link">Trabalhe Conosco </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/js/bootstrap.js"></script>
+</body>
+</html>

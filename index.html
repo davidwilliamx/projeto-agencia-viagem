@@ -9,9 +9,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/site.webmanifest">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
 </head>
-<body class="container">
+<body class="container-fluid">
     <main id="pagina">
         <header id="header" class="row">
             <nav class="navbar navbar-expand-sm bg-transparent">
@@ -23,14 +23,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link nav__list-link" href="#">Destinos</a>
+                            <a class="nav-link nav__list-link" href="destinos.html">Destinos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav__list-link" href="#">Estadias</a>
+                            <a class="nav-link nav__list-link" href="promocoes.html">Promoções</a>
                         </li>
                         <li class="nav-item">
-                            <a class="navbar-brand" href="#">
-                                <img src="./assets/images/logo-header.svg" alt="Golobe Agência de viagens" class="img-fluid logo__header">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="img-fluid logo__header">
                             </a>
                         </li>
                         <li class="nav-item">
@@ -60,9 +60,9 @@
         <div class="stay__container">
             <form class="stay__form">
                 <div class="row">
-                    <input type="text" name="Destino" id="stay__form-destino" placeholder="Origem" class="col-sm-4">
-                    <input type="text" name="Saida" id="stay__form-saida" placeholder="Destino" class="col-sm-4">
-                    <select name="passageiro" id="stay__form-passageiro" class="col-sm-4">
+                    <input type="text" name="Destino" id="stay__form-destino" placeholder="Origem" class="col-sm-4 mb-2">
+                    <input type="text" name="Saida" id="stay__form-saida" placeholder="Destino" class="col-sm-4 mb-2">
+                    <select name="passageiro" id="stay__form-passageiro" class="col-sm-4 mb-2">
                         <option value="1 Hóspede Adulto">1 Hóspede Adulto</option>
                         <option value="2 Hóspedes Adultos">2 Hóspedes Adultos</option>
                         <option value="3 Hóspedes Adultos">3 Hóspedes Adultos</option>
@@ -76,115 +76,121 @@
     </section>
     <section id="destiny" class="row mb-5">
         <div class="destiny__header mb-5">
-            <h2 class="destiny__title col-sm-5 mb-5">Planeje sua viagem perfeita</h2>
-            <p class="destiny__text col-sm-5">Pesquise destinos e lugares nos nossos destinos mais populares</p>
+            <h2 class="destiny__title col-lg-5 mb-5">Planeje sua viagem perfeita</h2>
+            <p class="destiny__text col-lg-5">Pesquise destinos e lugares nos nossos destinos mais populares</p>
             <button type="button" class="destiny__btn col-sm-2 float-end">Veja mais lugares</button>
         </div>
         <div class="destiny__body">
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/istanbul-turkey.png" class="img-fluid rounded-start" alt="Istambul">
+            <div class="card-group">
+                <div class="card mb-3" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/istanbul-turkey.png" class="img-fluid rounded-start" alt="Istambul">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Istanbul, Turquia</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Istanbul, Turquia</h5>
+                </div>
+                <div class="card mb-3 mx-2" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/sydney-australia.png" class="img-fluid rounded-start" alt="Sydney">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Sydney, Austrália</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/baku-azerbaijan.png" class="img-fluid rounded-start" alt="Baku">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Baku, Azerbaijão</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/sydney-australia.png" class="img-fluid rounded-start" alt="Sydney">
+            <div class="card-group">
+                <div class="card mb-3" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/london-uk.png" class="img-fluid rounded-start" alt="Londres">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Londres, Inglaterra</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Sydney, Austrália</h5>
+                </div>
+                <div class="card mb-3 mx-2" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/dubai-uae.png" class="img-fluid rounded-start" alt="Dubai">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Dubai, UAE</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/male-maldives.png" class="img-fluid rounded-start" alt="Malé">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Malé, Maldivas</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/baku-azerbaijan.png" class="img-fluid rounded-start" alt="Baku">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Baku, Azerbaijão</h5>
+            <div class="card-group">
+                <div class="card mb-3" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/paris-france.png" class="img-fluid rounded-start" alt="Paris">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Paris, França</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/london-uk.png" class="img-fluid rounded-start" alt="Londres">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Londres, Inglaterra</h5>
+                <div class="card mb-3 mx-2" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/tokyo-japan.png" class="img-fluid rounded-start" alt="Tóquio">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tóquio, Japão</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/dubai-uae.png" class="img-fluid rounded-start" alt="Dubai">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Dubai, UAE</h5>
+                <div class="card mb-3" style="max-width: 300px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./assets/images/new-york-us.png" class="img-fluid rounded-start" alt="Nova Yorque">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/male-maldives.png" class="img-fluid rounded-start" alt="Malé">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Malé, Maldivas</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/paris-france.png" class="img-fluid rounded-start" alt="Paris">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Paris, França</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/tokyo-japan.png" class="img-fluid rounded-start" alt="Tóquio">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Tóquio, Japão</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 300px;">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="./assets/images/new-york-us.png" class="img-fluid rounded-start" alt="Nova Yorque">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Nova Yorque, EUA</h5>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Nova Yorque, EUA</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,7 +206,7 @@
                 <button type="button" class="blog__atracoes-btn">Mostrar Atrações</button>
             </div>
         </div> -->
-        <div class="card bg-transparent">
+        <div class="card bg-transparent col-md-6">
             <img src="./assets/images/hotels5x.png" class="card-img blog__atracoes-image" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina">
             <div class="card-img-overlay">
               <h5 class="card-title blog__atracoes-title">Atrações</h5>
@@ -216,7 +222,7 @@
                 <button class="blog__hoteis-btn">Mostrar Hotéis</button>
             </div>
         </div> -->
-        <div class="card bg-transparent">
+        <div class="card bg-transparent col-md-6">
             <img src="./assets/images/hotels5x.png" class="card-img blog__atracoes-image" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina">
             <div class="card-img-overlay">
               <h5 class="card-title blog__hoteis-title">Hotéis</h5>
@@ -279,56 +285,61 @@
             </div>
         </div>
     </section>
-    
-    <footer id="footer" class="row">
-        <div class="footer__content">
-            <div class="row">
-                <section id="newsletter">
-                    <div class="newsletter__header">
-                        <h2 class="newsletter__title h2">Assine nossa Newsletter</h2>
-                        <p class="newsletter__subtitle">O Viajante</p>
-                        <p class="newsletter__text">Inspire-se! Receba descontos em viagens, dicas e histórias dos bastidores.</p>
-                    </div>
-                    <div class="newsletter__body">
-                        <form class="newsletter__form">
-                            <input type="email" name="Newsletter email" id="newsletter__form-email" placeholder="Seu endereço e-mail">
-                            <input type="button" value="Assine" class="newsletter__form-btn">
-                        </form>
-                    </div>
-                    <picture class="newsletter__image">
-                        <img src="./assets/images/emojione-v1_open-mailbox-with-lowered-flag.svg" alt="Mailbox ícone" class="img-fluid">
-                    </picture>
-                </section>
-            </div>
-            <div class="row footer__links">
-                <div class="footer__social mb-5">
-                    <div class="row my-5">
-                        <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="footer__logo img-fluid">
-                    </div>
-                    <ul class="footer__social-lista d-flex gap-5">
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="./assets/images/akar-icons_facebook-fill.svg" alt="Logo Facebook" class="footer__social-icons img-fluid">
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="./assets/images/akar-icons_twitter-fill.svg" alt="Logo Twitter" class="footer__social-icons img-fluid">
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="./assets/images/akar-icons_youtube-fill.svg" alt="Logo Youtube" class="footer__social-icons img-fluid">
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="./assets/images/ant-design_instagram-filled.svg" alt="Logo Instagram" class="footer__social-icons img-fluid">
-                            </a>
-                        </li>
-                    </ul>
+</main>
+<footer id="footer">
+    <div class="footer__content row">
+        <div class="col-sm-6">
+            <section id="newsletter">
+                <div class="newsletter__header">
+                    <h2 class="newsletter__title h2">Assine nossa Newsletter</h2>
+                    <p class="newsletter__subtitle">O Viajante</p>
+                    <p class="newsletter__text">Inspire-se! Receba descontos em viagens, dicas e histórias dos bastidores.</p>
                 </div>
-                <div class="footer__destinations">
+                <div class="newsletter__body">
+                    <form class="newsletter__form">
+                        <input type="email" name="Newsletter email" id="newsletter__form-email" placeholder="Seu endereço e-mail">
+                        <input type="button" value="Assine" class="newsletter__form-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-6">
+            <div class="newsletter__image">
+                <img src="./assets/images/emojione-v1_open-mailbox-with-lowered-flag.svg" alt="Mailbox ícone" class="img-fluid">
+            </div>
+        </div>
+        <div class="container-fluid footer__links">
+            <div class="footer__social mb-5">
+                <div class="row my-5">
+                    <div class="col">
+                        <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="footer__logo text-center">
+                    </div>
+                </div>
+                <ul class="footer__social-lista d-flex gap-5">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/akar-icons_facebook-fill.svg" alt="Logo Facebook" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/akar-icons_twitter-fill.svg" alt="Logo Twitter" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/akar-icons_youtube-fill.svg" alt="Logo Youtube" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/ant-design_instagram-filled.svg" alt="Logo Instagram" class="footer__social-icons img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-group">
+                <div class="footer__destinations mx-2">
                     <h5 class="footer__destinations-title h5">Nossos Destinos</h5>
                     <ul class="footer__destinations-lista px-0">
                         <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Canadá</a></li>
@@ -337,7 +348,7 @@
                         <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Islândia</a></li>
                     </ul>
                 </div>
-                <div class="footer__activities">
+                <div class="footer__activities mx-2">
                     <h5 class="footer__activities-title h5">Nossas Atividades</h5>
                     <ul class="footer__activities-lista px-0">
                         <li class="footer__activities-item"><a href="#" class="footer__activities-link">Luzes do Norte</a></li>
@@ -346,7 +357,7 @@
                         <li class="footer__activities-item"><a href="#" class="footer__activities-link">Caiaque</a></li>
                     </ul>
                 </div>
-                <div class="footer__blog">
+                <div class="footer__blog mx-2">
                     <h5 class="footer__blog-title h5">Blogs de viagem</h5>
                     <ul class="footer__blog-lista px-0">
                         <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Bali</a></li>
@@ -355,24 +366,24 @@
                         <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Argentina</a></li>
                     </ul>
                 </div>
-                <div class="footer__sobre">
+                <div class="footer__sobre mx-2">
                     <h5 class="footer__sobre-title">Nossa Empresa</h5>
                     <ul class="footer__sobre-lista px-0">
                         <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Nossa História</a></li>
                         <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Trabalhe Conosco</a></li>
                     </ul>
                 </div>
-                <div class="footer__contato">
+                <div class="footer__contato mx-2">
                     <h5 class="footer__contato-title">Entre em contato conosco</h5>
                     <ul class="footer__contato-lista px-0">
-                        <li class="footer__contato-item"><a href="#" class="footer__contato-link">Nossa História</a></li>
+                        <li class="footer__contato-item"><a href="contato.html" class="footer__contato-link">Contato</a></li>
                         <li class="footer__contato-item"><a href="#" class="footer__contato-link">Trabalhe Conosco </a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </footer>
-</main>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </div>
+</footer>
+<script src="./assets/js/bootstrap.js"></script>
 </body>
 </html>
