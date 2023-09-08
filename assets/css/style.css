@@ -1,36 +1,36 @@
 @font-face {
     font-family: texto-regular;
-    src: url("/assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: texto-medium;
-    src: url("/assets/fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+    src: url("../assets/fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
     font-weight: 500;
 }
 
 @font-face {
     font-family: texto-semi;
-    src: url("/assets/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+    src: url("../assets/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
     font-weight: 600;
 }
 
 @font-face {
     font-family: texto-bold;
-    src: url("/assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+    src: url("../assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
     font-weight: 700;
 }
 
 @font-face {
     font-family: titulo-regular;
-    src: url("/assets/fonts/tgextended/TGRegular.otf") format("opentype");
+    src: url("../assets/fonts/tgextended/TGRegular.otf") format("opentype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: titulo-bold;
-    src: url("/assets/fonts/tgextended/TGBold.otf") format("opentype");
+    src: url("../assets/fonts/tgextended/TGBold.otf") format("opentype");
     font-weight: 700;
 }
 * {
