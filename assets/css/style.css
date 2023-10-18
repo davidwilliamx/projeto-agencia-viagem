@@ -1,54 +1,18 @@
-@font-face {
-    font-family: texto-regular;
-    src: url(../fonts/montserrat/Montserrat-Regular.ttf) format("truetype");
-    font-weight: 400;
-}
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
 
-@font-face {
-    font-family: texto-medium;
-    src: url(../fonts/montserrat/Montserrat-Medium.ttf) format("truetype");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: texto-semi;
-    src: url(../fonts/montserrat/Montserrat-SemiBold.ttf) format("truetype");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: texto-bold;
-    src: url(../fonts/montserrat/Montserrat-Bold.ttf) format("truetype");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: titulo-regular;
-    src: url(../fonts/tgextended/TGRegular.otf) format("opentype");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: titulo-bold;
-    src: url(../fonts/tgextended/TGBold.otf) format("opentype");
-    font-weight: 700;
-}
 * {
     list-style-type: none;
 }
+
 :root {
-    --tituloRegularFont: titulo-regular;
-    --tituloBoldFont: titulo-bold;
-    --textoRegularFont: texto-regular;
-    --textoMediumFont: texto-medium;
-    --textoSemiFont: texto-semi;
-    --textoBoldFont: texto-bold;
+    --tituloFont: "Libre Franklin", sans-serif;
+    --textoFont: "Montserrat", sans-serif;
     --blackishGreen: #112211;
-    --mintGreen: #8DD3BB;
-    --salmon: #FF8682;
-    --neutrals: #FFFFFF;
+    --mintGreen: #8dd3bb;
+    --salmon: #ff8682;
+    --neutrals: #ffffff;
     --black: #000000;
-    --blackish: #1C1B1F;
+    --blackish: #1c1b1f;
 }
 
 .logo__header {
@@ -56,107 +20,122 @@
     height: 36px;
 }
 
-.nav__list-link {
-    font-family: var(--textoSemiFont);
-    text-decoration: none;
-    color: var(--neutrals, #FFF);
-    font-style: normal;
-    line-height: normal;
+#header {
+    background-color: var(--mintGreen);
+}
+
+/* .nav__list-link {
+  font-family: var(--textoFont);
+  text-decoration: none;
+  color: var(--neutrals, #fff);
+  font-style: normal;
+  line-height: normal;
 }
 
 .login__link {
-    font-family: var(--textoSemiFont);
-    text-decoration: none;
-    color: var(--neutrals, #FFF);
+  font-family: var(--textoFont);
+  text-decoration: none;
+  color: var(--neutrals, #fff);
 }
 
 .sign-up {
-    font-family: var(--textoSemiFont);
-    color: var(--blackish-green, #121);
-    background: var(--neutrals, #FFF);
-    border-radius: 0.5rem;
-}
+  font-family: var(--textoFont);
+  color: var(--blackish-green, #121);
+  background: var(--neutrals, #fff);
+  border-radius: 0.5rem;
+} */
 
-.cta__title {
-    font-family: var(--tituloBoldFont);
-    color: var(--neutrals);
-    text-align: center;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.cta__subtitle {
-    font-family: var(--tituloBoldFont);
-    color: var(--neutrals);
-    text-align: center;
-    font-style: normal;
-    line-height: normal;
-}
-
-.cta__offer {
-    font-family: var(--textoSemiFont);
-    color: var(--neutrals);
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.cta__bg {
-    width: 100%;
-    height: 100%;
+#hero {
+    background-image: url("../images/cta1x.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    max-width: 1380px;
+    max-height: 599px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+/* .hero__title {
+  font-family: var(--tituloFont);
+  color: var(--neutrals);
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  font-family: var(--tituloFont);
+  color: var(--neutrals);
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+}
+
+.hero__offer {
+  font-family: var(--textoFont);
+  color: var(--neutrals);
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+} */
+#form-reserva {
+    margin-top: -50px;
 }
 
 #stay__form-destino {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     font-style: normal;
     line-height: normal;
     gap: 0.625rem;
     border-radius: 0.25rem;
-    border: 1px solid #79747E;
-    background: #FFF;
+    border: 1px solid #79747e;
+    background: #fff;
     padding: 0.25rem 0rem 0.25rem 1rem;
 }
+
 #stay__form-saida {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     font-style: normal;
     line-height: normal;
     gap: 0.625rem;
     border-radius: 0.25rem;
-    border: 1px solid #79747E;
-    background: #FFF;
+    border: 1px solid #79747e;
+    background: #fff;
     padding: 0.25rem 0rem 0.25rem 1rem;
 }
+
 #stay__form-destino::placeholder,
 #stay__form-saida::placeholder {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     color: var(--blackish);
     font-style: normal;
     line-height: normal;
 }
 
 #stay__form-passageiro {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     color: var(--blackish);
     font-style: normal;
     line-height: normal;
     gap: 0.625rem;
     border-radius: 0.25rem;
-    border: 1px solid #79747E;
-    background: #FFF;
+    border: 1px solid #79747e;
+    background: #fff;
     padding: 0.5rem 0rem 0.5rem 1rem;
 }
 
 .stay__form-submit {
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     font-style: normal;
     line-height: normal;
     color: var(--blackish-green, #121);
     border: 0;
     border-radius: 0.25rem;
-    background: var(--mint-green, #8DD3BB);
+    background: var(--mint-green, #8dd3bb);
     cursor: pointer;
     display: flex;
     height: 3rem;
@@ -167,7 +146,7 @@
 }
 
 .destiny__title {
-    font-family: var(--textoSemiFont);
+    font-family: var(--textoFont);
     color: var(--black);
     height: 2.25rem;
     align-self: stretch;
@@ -176,7 +155,7 @@
 }
 
 .destiny__text {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     color: var(--blackish-green, #121);
     opacity: 0.7;
     align-self: stretch;
@@ -185,11 +164,11 @@
 }
 
 .destiny__btn {
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
     background-color: var(--neutrals);
     border-radius: 0.25rem;
-    border: 1px solid var(--mint-green, #8DD3BB);
+    border: 1px solid var(--mint-green, #8dd3bb);
     cursor: pointer;
     font-style: normal;
     line-height: normal;
@@ -202,7 +181,7 @@
 }
 
 .destiny__card-title {
-    font-family: var(--textoSemiFont);
+    font-family: var(--textoFont);
     color: var(--blackish-green, #121);
     align-self: stretch;
     font-style: normal;
@@ -212,142 +191,109 @@
 
 .destiny__card-link {
     color: var(--blackish-green, #121);
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     font-style: normal;
     line-height: normal;
     text-decoration: none;
 }
+
 .destiny__card-image {
     width: 5.625rem;
     height: 5.625rem;
 }
+
 .blog__atracoes-title {
-    font-family: var(--tituloBoldFont);
+    font-family: var(--tituloFont);
 }
 
 .blog__atracoes-text {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
 }
 
 .blog__atracoes-btn {
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
     border-radius: 0.25rem;
-    background: var(--mint-green, #8DD3BB);
+    background: var(--mint-green, #8dd3bb);
     cursor: pointer;
     border: 0;
 }
 
 .blog__hoteis-title {
-    font-family: var(--tituloBoldFont);
+    font-family: var(--tituloFont);
 }
 
 .blog__hoteis-text {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
 }
 
 .blog__hoteis-btn {
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
     border-radius: 0.25rem;
-    background: var(--mint-green, #8DD3BB);
+    background: var(--mint-green, #8dd3bb);
     cursor: pointer;
     border: 0;
 }
-.review__title {
-    font-family: var(--textoSemiFont);
-    color: var(--black);
+
+bg-card-blog {
+    border-radius: 0px 0px 24px 24px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(18, 18, 18, 0.75) 48.67%);
 }
 
-.review__text {
-    font-family: var(--textoRegularFont);
-    color: var(--black);
-}
-
-.review__btn {
-    font-family: var(--textoMediumFont);
-    color: var(--blackish-green, #121);
-    background-color: var(--neutrals);
-    border-radius: 0.25rem;
-    border: 1px solid var(--mint-green, #8DD3BB);
-    cursor: pointer;
-}
-
-.review__card-title {
-    font-family: var(--tituloBoldFont);
-    color: var(--blackish-green, #121);
-}
-
-.review__card-text {
-    font-family: var(--textoMediumFont);
-    color: var(--blackish-green, #121);
-    opacity: 0.5;
-}
-
-.review__card-btn {
-    font-family: var(--tituloBoldFont);
-    color: var(--blackish-green, #121);
-    border: 0;
-    cursor: pointer;
-}
-
-.review__card-name {
-    font-family: var(--tituloBoldFont);
-    color: var(--blackish-green, #121);
-}
-
-.review__card-empresa {
-    font-family: var(--textoMediumFont);
-    color: var(--blackish-green, #121);
-    opacity: 0.5;
-}
 
 .newsletter__title {
-    font-family: var(--tituloBoldFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
 }
 
 .newsletter__subtitle {
-    font-family: var(--tituloBoldFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
     opacity: 0.8;
 }
 
 .newsletter__text {
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
     opacity: 0.7;
 }
 
 .newsletter__form-email {
     color: var(--blackish);
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     font-style: normal;
     line-height: normal;
     gap: 0.625rem;
     border-radius: 0.25rem;
-    border: 1px solid #79747E;
-    background: #FFF;
+    border: 1px solid #79747e;
+    background: #fff;
     padding: 0.5rem 0rem 0.5rem 1rem;
 }
 
 #newsletter__form-email::placeholder {
     color: var(--blackish);
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
 }
 
 .newsletter__form-btn {
-    font-family: var(--textoRegularFont);
+    font-family: var(--textoFont);
     padding: 0.5rem 1rem;
     gap: 0.25rem;
-    color: var(--neutrals, #FFF);
+    color: var(--neutrals, #fff);
     border-radius: 0.25rem;
     background: var(--blackish-green, #121);
     cursor: pointer;
 }
+
+#footer {
+    background-color: var(--mintGreen);
+}
+
 .footer__links {
     background-color: var(--mintGreen);
 }
+
 .footer__social-icons {
     color: var(--blackishGreen);
 }
@@ -357,7 +303,7 @@
 .footer__blog-title,
 .footer__sobre-title,
 .footer__contato-title {
-    font-family: var(--tituloBoldFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
 }
 
@@ -366,11 +312,12 @@
 .footer__blog-link,
 .footer__sobre-link,
 .footer__contato-link {
-    font-family: var(--textoMediumFont);
+    font-family: var(--tituloFont);
     color: var(--blackish-green, #121);
     opacity: 0.7;
     text-decoration: none;
 }
+
 .footer__logo {
     width: 120px;
 }

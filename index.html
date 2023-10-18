@@ -1,389 +1,603 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Golobe Agência de Viagens</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-    <link rel="manifest" href="./assets/images/site.webmanifest">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link href="./assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="./assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="./assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body class="container-fluid">
-    <main id="pagina">
-        <header id="header" class="row">
-            <nav class="navbar navbar-expand-sm bg-transparent">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<body>
+    <header id="header">
+        <nav aria-label="Thirteenth navbar example" class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <button aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarsExample11" data-bs-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div class="collapse navbar-collapse d-sm-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-sm-3 me-0" href="#">
+                        <img alt="Golobe Agência de viagens" class="img-fluid" src="./assets/images/logo-footer.svg">
+                    </a>
+                    <ul class="navbar-nav col-sm-6 justify-content-sm-center">
                         <li class="nav-item">
-                            <a class="nav-link nav__list-link" href="destinos.html">Destinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav__list-link" href="promocoes.html">Promoções</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="img-fluid logo__header">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-signpost-2-fill text-black"></i>
+                                Destinos
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav__list-link" href="#">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav__list-link" href="#">Cadastrar</a>
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-tags-fill text-black"></i>
+                                Promoções
+                            </a>
                         </li>
                     </ul>
+                    <div class="d-sm-flex col-sm-3 justify-content-sm-end gap-2">
+                        <button class="btn btn-outline-light">Logar</button>
+                        <button class="btn btn-light">Cadastrar</button>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="cta" class="mb-5">
-        <div class="row">
-            <div class="card p-0 border-0 container-fluid">
-                <img src="./assets/images/cta1x.png" alt="Imagem frente do barco em uma lagoa com paisagem ao fundo." class="card-img img-fluid">
-                <div class="card-img-overlay d-flex justify-content-center flex-column align-items-center gap-1">
-                    <p class="cta__subtitle">Ajudando outras pessoas</p>
-                    <h1 class="cta__title">viver &amp; viajar</h1>
-                    <p class="cta__offer">Ofertas especiais para atender aos seus planos</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="stay" class="row mb-5">
-        <div class="stay__container">
-            <form class="stay__form">
-                <div class="row">
-                    <input type="text" name="Destino" id="stay__form-destino" placeholder="Origem" class="col-sm-4 mb-2">
-                    <input type="text" name="Saida" id="stay__form-saida" placeholder="Destino" class="col-sm-4 mb-2">
-                    <select name="passageiro" id="stay__form-passageiro" class="col-sm-4 mb-2">
-                        <option value="1 Hóspede Adulto">1 Hóspede Adulto</option>
-                        <option value="2 Hóspedes Adultos">2 Hóspedes Adultos</option>
-                        <option value="3 Hóspedes Adultos">3 Hóspedes Adultos</option>
-                    </select>
-                </div>
-                <div class="row float-end mb-5">
-                    <button type="button" class="stay__form-submit">Mostrar Destinos</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <section id="destiny" class="row mb-5">
-        <div class="destiny__header mb-5">
-            <h2 class="destiny__title col-lg-5 mb-5">Planeje sua viagem perfeita</h2>
-            <p class="destiny__text col-lg-5">Pesquise destinos e lugares nos nossos destinos mais populares</p>
-            <button type="button" class="destiny__btn col-sm-2 float-end">Veja mais lugares</button>
-        </div>
-        <div class="destiny__body">
-            <div class="card-group">
-                <div class="card mb-3" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/istanbul-turkey.png" class="img-fluid rounded-start" alt="Istambul">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Istanbul, Turquia</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 mx-2" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/sydney-australia.png" class="img-fluid rounded-start" alt="Sydney">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Sydney, Austrália</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/baku-azerbaijan.png" class="img-fluid rounded-start" alt="Baku">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Baku, Azerbaijão</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card mb-3" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/london-uk.png" class="img-fluid rounded-start" alt="Londres">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Londres, Inglaterra</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 mx-2" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/dubai-uae.png" class="img-fluid rounded-start" alt="Dubai">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Dubai, UAE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/male-maldives.png" class="img-fluid rounded-start" alt="Malé">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Malé, Maldivas</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card mb-3" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/paris-france.png" class="img-fluid rounded-start" alt="Paris">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Paris, França</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 mx-2" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/tokyo-japan.png" class="img-fluid rounded-start" alt="Tóquio">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Tóquio, Japão</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 300px;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="./assets/images/new-york-us.png" class="img-fluid rounded-start" alt="Nova Yorque">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Nova Yorque, EUA</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </section>
-    <section id="blog" class="row">
-        <!-- <div class="blog__atracoes">
-            <img src="./assets/images/hotels5x.png" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina." class="blog__atracoes-image img-fluid">
-            <h3 class="blog__atracoes-title h3">Atrações</h3>
-            <div class="blog__atracoes-body">
-                <p class="blog__atracoes-text">Pesquise atrações e os pontos turísticos mais famosos para visitar.</p>
-                <button type="button" class="blog__atracoes-btn">Mostrar Atrações</button>
-            </div>
-        </div> -->
-        <div class="card bg-transparent col-md-6">
-            <img src="./assets/images/hotels5x.png" class="card-img blog__atracoes-image" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina">
-            <div class="card-img-overlay">
-              <h5 class="card-title blog__atracoes-title">Atrações</h5>
-              <p class="card-text blog__atracoes-text">Pesquise atrações e os pontos turísticos mais famosos para visitar.</p>
-              <button type="button" class="blog__atracoes-btn">Mostrar Atrações</button>
-            </div>
-          </div>
-        <!-- <div class="blog__hoteis">
-            <img src="./assets/images/hotels5x.png" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina." class="blog__hoteis-image img-fluid">
-            <h3 class="blog__hoteis-title h3">Hotéis</h3>
-            <div class="blog__hoteis-body">
-                <p class="blog__hoteis-text">Pesquise os melhores e mais luxuosos hotéis para se hospedar durante sua viagem.</p>
-                <button class="blog__hoteis-btn">Mostrar Hotéis</button>
-            </div>
-        </div> -->
-        <div class="card bg-transparent col-md-6">
-            <img src="./assets/images/hotels5x.png" class="card-img blog__atracoes-image" alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina">
-            <div class="card-img-overlay">
-              <h5 class="card-title blog__hoteis-title">Hotéis</h5>
-              <p class="card-text blog__hoteis-text">Pesquise os melhores e mais luxuosos hotéis para se hospedar durante sua viagem.</p>
-              <button type="button" class="blog__hoteis-btn">Mostrar Hotéis</button>
-            </div>
-          </div>
-    </section>
-    <section id="review" class="row mt-5">
-        <div class="review__header mb-5">
-            <h2 class="review__title h2">Reviews</h2>
-            <p class="review__text">O que as pessoas dizem sobre os serviços da Golobe</p>
-            <button type="button" class="review__btn">Veja todos</button>
-        </div>
-        <div class="review__content">
-            <div class="review__card mb-5">
-                <div class="review__card-header">
-                    <h4 class="review__card-title h4">"Um verdadeiro senso de comunidade, cultivado"</h4>
-                    <p class="review__card-text">Agradeço muito a ajuda e o apoio da equipe durante esses momentos difíceis. Parabéns à Katie por me ajudar sempre, mesmo quando eu estava fora do país. E sempre disponível quando necessário.</p>
-                    <button type="button" title="Veja mais" class="review__card-btn">Veja mais</button>
-                </div>
-                <div class="review__card-stars"></div>
-                <div class="review__card-author">
-                    <h5 class="review__card-name h5">Olga</h5>
-                    <p class="review__card-empresa">Weave Studios - Kai Tak</p>
-                </div>
-                <picture>
-                    <img src="./assets/images/feedback036x.png" alt="Feedback Image" class="img-fluid">
-                </picture>
-            </div>
-            <div class="review__card mb-5">
-                <div class="review__card-header">
-                    <h4 class="review__card-title h4">"As instalações são excelentes. Limpas, elegantes e bem iluminadas."</h4>
-                    <p class="review__card-text">“Um verdadeiro senso de comunidade, nutrido "Agradeço muito a ajuda e o apoio da equipe durante esses tempos difíceis. Parabéns à Katie por me ajudar sempre, mesmo quando eu estava fora do país. E sempre disponível quando necessário.Ver maisOlgaWeave Studios - Kai TakGoogle.</p>
-                    <button type="button" title="Veja mais" class="review__card-btn">Veja mais</button>
-                </div>
-                <div class="review__card-stars"></div>
-                <div class="review__card-author">
-                    <h5 class="review__card-name h5">Thomas</h5>
-                    <p class="review__card-empresa">Weave Studios - Olímpia</p>
-                </div>
-                <picture>
-                    <img src="./assets/images/feedback136x.png" alt="Feedback Image" class="img-fluid">
-                </picture>
-            </div>
-            <div class="review__card mb-5">
-                <div class="review__card-header">
-                    <h4 class="review__card-title h4">"Um verdadeiro senso de comunidade, cultivado"</h4>
-                    <p class="review__card-text">Agradeço muito a ajuda e o apoio da equipe durante esses momentos difíceis. Parabéns à Katie por me ajudar sempre, mesmo quando eu estava fora do país. E sempre disponível quando necessário.</p>
-                    <button type="button" title="Veja mais" class="review__card-btn">Veja mais</button>
-                </div>
-                <div class="review__card-stars"></div>
-                <div class="review__card-author">
-                    <h5 class="review__card-name h5">Olga</h5>
-                    <p class="review__card-empresa">Weave Studios - Kai Tak</p>
-                </div>
-                <picture>
-                    <img src="./assets/images/feedback236x.png" alt="Feedback Image" class="img-fluid">
-                </picture>
-            </div>
-        </div>
-    </section>
-</main>
-<footer id="footer">
-    <div class="footer__content row">
-        <div class="col-sm-6">
-            <section id="newsletter">
-                <div class="newsletter__header">
-                    <h2 class="newsletter__title h2">Assine nossa Newsletter</h2>
-                    <p class="newsletter__subtitle">O Viajante</p>
-                    <p class="newsletter__text">Inspire-se! Receba descontos em viagens, dicas e histórias dos bastidores.</p>
-                </div>
-                <div class="newsletter__body">
-                    <form class="newsletter__form">
-                        <input type="email" name="Newsletter email" id="newsletter__form-email" placeholder="Seu endereço e-mail">
-                        <input type="button" value="Assine" class="newsletter__form-btn">
-                    </form>
-                </div>
-            </section>
-        </div>
-        <div class="col-sm-6">
-            <div class="newsletter__image">
-                <img src="./assets/images/emojione-v1_open-mailbox-with-lowered-flag.svg" alt="Mailbox ícone" class="img-fluid">
-            </div>
-        </div>
-        <div class="container-fluid footer__links">
-            <div class="footer__social mb-5">
-                <div class="row my-5">
-                    <div class="col">
-                        <img src="./assets/images/logo-footer.svg" alt="Golobe Agência de viagens" class="footer__logo text-center">
-                    </div>
-                </div>
-                <ul class="footer__social-lista d-flex gap-5">
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <img src="./assets/images/akar-icons_facebook-fill.svg" alt="Logo Facebook" class="footer__social-icons img-fluid">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <img src="./assets/images/akar-icons_twitter-fill.svg" alt="Logo Twitter" class="footer__social-icons img-fluid">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <img src="./assets/images/akar-icons_youtube-fill.svg" alt="Logo Youtube" class="footer__social-icons img-fluid">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <img src="./assets/images/ant-design_instagram-filled.svg" alt="Logo Instagram" class="footer__social-icons img-fluid">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="card-group">
-                <div class="footer__destinations mx-2">
-                    <h5 class="footer__destinations-title h5">Nossos Destinos</h5>
-                    <ul class="footer__destinations-lista px-0">
-                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Canadá</a></li>
-                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Alaska</a></li>
-                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">França</a></li>
-                        <li class="footer__destinations-item"><a href="#" class="footer__destinations-link">Islândia</a></li>
-                    </ul>
-                </div>
-                <div class="footer__activities mx-2">
-                    <h5 class="footer__activities-title h5">Nossas Atividades</h5>
-                    <ul class="footer__activities-lista px-0">
-                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Luzes do Norte</a></li>
-                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Cruzeiro &amp; vela </a></li>
-                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Atividades Múltiplas</a></li>
-                        <li class="footer__activities-item"><a href="#" class="footer__activities-link">Caiaque</a></li>
-                    </ul>
-                </div>
-                <div class="footer__blog mx-2">
-                    <h5 class="footer__blog-title h5">Blogs de viagem</h5>
-                    <ul class="footer__blog-lista px-0">
-                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Bali</a></li>
-                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Canadá </a></li>
-                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Peru</a></li>
-                        <li class="footer__blog-item"><a href="#" class="footer__blog-link">Guia de viagem para Argentina</a></li>
-                    </ul>
-                </div>
-                <div class="footer__sobre mx-2">
-                    <h5 class="footer__sobre-title">Nossa Empresa</h5>
-                    <ul class="footer__sobre-lista px-0">
-                        <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Nossa História</a></li>
-                        <li class="footer__sobre-item"><a href="#" class="footer__sobre-link">Trabalhe Conosco</a></li>
-                    </ul>
-                </div>
-                <div class="footer__contato mx-2">
-                    <h5 class="footer__contato-title">Entre em contato conosco</h5>
-                    <ul class="footer__contato-lista px-0">
-                        <li class="footer__contato-item"><a href="contato.html" class="footer__contato-link">Contato</a></li>
-                        <li class="footer__contato-item"><a href="#" class="footer__contato-link">Trabalhe Conosco </a></li>
-                    </ul>
+
+    <div class="container-fluid" id="hero">
+        <div class="container">
+            <div class="border-0 col-sm-12">
+                <div class="py-5 text-center d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-light">Ajudando outras pessoas</p>
+                    <h1 class="text-light fw-bold text-uppercase">viver &amp; viajar</h1>
+                    <p class="text-light">Ofertas especiais para atender aos seus planos</p>
                 </div>
             </div>
         </div>
     </div>
-</footer>
-<script src="./assets/js/bootstrap.js"></script>
+
+    <section class="container bg-light rounded" id="form-reserva">
+        <div class="container">
+            <div class="row pt-3 pb-4 mx-3">
+                <ul class="navbar-nav nav-underline d-flex flex-row col-sm-6 justify-content-start">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="bi bi-airplane-fill text-black"></i>
+                            Voos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-house-fill text-black"></i>
+                            Estadias
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-3">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <input class="form-control" id="floatingInputGroup1" placeholder="Sydney - São Paulo"
+                                type="text" value="Sydney - São Paulo">
+                            <label for="floatingInputGroup1">De - Para</label>
+                        </div>
+                        <span class="input-group-text"><i class="bi bi-arrow-left-right text-black"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-floating">
+                        <select aria-label="Viagem" class="form-select" id="floatingViagem">
+                            <option selected value="1">Ida</option>
+                            <option value="2">Volta</option>
+                            <option value="3">Ida e Volta</option>
+                        </select>
+                        <label for="floatingViagem">Direção</label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <form class="form-floating">
+                        <input class="form-control" id="floatingInputValue" placeholder="Partida - Retorno" type="date">
+                        <label for="floatingInputValue">Partida - Retorno</label>
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-floating">
+                        <select aria-label="Passagem" class="form-select" id="floatingPassagem">
+                            <option selected value="1">1 passageiro, econômica</option>
+                            <option value="2">2 passageiro(s), econômica</option>
+                            <option value="3">3 passageiro(s), econômica</option>
+                        </select>
+                        <label for="floatingPassagem">Passagem - Classe</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row mb-3 float-sm-end">
+                    <button class="col-6 mb-sm-4 btn">
+                        <i class="bi bi-plus"></i>
+                        Cupom
+                    </button>
+                    <button class="col-6 mb-sm-4 btn btn-outline-dark">
+                        <i class="bi bi-send-fill"></i>
+                        Exibir
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container mb-5" id="destiny">
+        <div class="destiny__header mb-5 row">
+            <h2 class="row fs-2 fw-bold">Planeje sua viagem perfeita</h2>
+            <p class="row fs-4">Destinos mais populares</p>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
+                                lines</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--        Fim coluna 1-->
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
+                                lines</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--        Fim coluna 2-->
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
+                                lines</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('../assets/images/hotels5x.png'); background-repeat: no-repeat; background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--        Fim coluna 3-->
+            <div class="row justify-content-center">
+                <button class="btn btn-outline-success text-black col-md-6" type="button">Veja mais lugares</button>
+            </div>
+            <!--        Fim Colunas-->
+        </div>
+    </section>
+
+    <section id="blog" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card bg-transparent border-0">
+                        <img src="./assets/images/hotels5x.png" class="card-img blog__atracoes-image"
+                            alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-end align-items-baseline text-center bg-black bg-opacity-50 rounded-4">
+                            <h5 class="card-title fs-2 align-self-center fw-bold text-light">Atrações</h5>
+                            <p class="card-text text-light align-self-center">Pesquise os pontos turísticos mais famosos
+                                para visitar.</p>
+                            <button type="button" class="btn btn-outline-light align-self-center">
+                                <i class="bi bi-send-fill"></i>
+                                Mostrar Atrações
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-transparent border-0">
+                        <img src="./assets/images/hotels5x.png" class="card-img blog__atracoes-image"
+                            alt="Imagem de hotel com vista para o mar, coqueiros, pedras ao redor de uma piscina">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-end align-items-baseline text-center bg-black bg-opacity-50 rounded-4">
+                            <h5 class="card-title fs-2 align-self-center fw-bold text-light">Hotéis</h5>
+                            <p class="card-text text-light align-self-center">Pesquise os melhores hotéis para se
+                                hospedar durante sua viagem.</p>
+                            <button type="button" class="btn btn-outline-light align-self-center">
+                                <i class="bi bi-send-fill"></i>
+                                Mostrar Hotéis
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="review" class="container my-5">
+        <div class="row mb-5">
+            <h2 class="h2">Reviews</h2>
+            <p class="text-body">O que as pessoas dizem sobre os serviços da Golobe</p>
+            <button type="button" class="btn btn-outline-dark">Veja todos</button>
+        </div>
+        <div class="row">
+            <div class="card col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Review</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="./assets/images/feedback136.png" class="card-img-bottom" alt="Feedback Cliente 1">
+            </div>
+            <div class="card col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Review</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="./assets/images/feedback136.png" class="card-img-bottom" alt="Feedback Cliente 2">
+            </div>
+            <div class="card col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Review</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="./assets/images/feedback236.png" class="card-img-bottom" alt="Feedback Cliente 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="newsletter__header">
+                    <h2 class="newsletter__title h2">Viajante assine nossa newsletter</h2>
+                    <p class="newsletter__text">Inspire-se! Receba descontos em viagens, dicas e histórias dos
+                        bastidores.</p>
+                </div>
+                <div class="newsletter__body">
+                    <form class="newsletter__form">
+                        <input type="email" name="Newsletter email" id="newsletter__form-email"
+                            placeholder="Seu endereço e-mail">
+                        <input type="button" value="Assine" class="newsletter__form-btn">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="newsletter__image">
+                    <img src="./assets/images/emojione-v1_open-mailbox-with-lowered-flag.svg" alt="Mailbox ícone"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid" id="footer">
+        <div class="container">
+            <div class="footer__social mb-5 row">
+                <div class="col">
+                    <img alt="Golobe Agência de viagens" class="footer__logo text-center"
+                        src="./assets/images/logo-footer.svg">
+                </div>
+                <ul class="footer__social-lista d-flex gap-5">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img alt="Logo Facebook" class="footer__social-icons img-fluid"
+                                src="./assets/images/akar-icons_facebook-fill.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img alt="Logo Twitter" class="footer__social-icons img-fluid"
+                                src="./assets/images/akar-icons_twitter-fill.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img alt="Logo Youtube" class="footer__social-icons img-fluid"
+                                src="./assets/images/akar-icons_youtube-fill.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img alt="Logo Instagram" class="footer__social-icons img-fluid"
+                                src="./assets/images/ant-design_instagram-filled.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="card-group">
+                    <div class="footer__destinations mx-2">
+                        <h5 class="footer__destinations-title h5">Nossos Destinos</h5>
+                        <ul class="footer__destinations-lista px-0">
+                            <li class="footer__destinations-item"><a class="footer__destinations-link"
+                                    href="#">Canadá</a></li>
+                            <li class="footer__destinations-item"><a class="footer__destinations-link"
+                                    href="#">Alaska</a></li>
+                            <li class="footer__destinations-item"><a class="footer__destinations-link"
+                                    href="#">França</a></li>
+                            <li class="footer__destinations-item"><a class="footer__destinations-link"
+                                    href="#">Islândia</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__activities mx-2">
+                        <h5 class="footer__activities-title h5">Nossas Atividades</h5>
+                        <ul class="footer__activities-lista px-0">
+                            <li class="footer__activities-item"><a class="footer__activities-link" href="#">Luzes do
+                                    Norte</a></li>
+                            <li class="footer__activities-item"><a class="footer__activities-link" href="#">Cruzeiro
+                                    &amp; vela </a></li>
+                            <li class="footer__activities-item"><a class="footer__activities-link" href="#">Atividades
+                                    Múltiplas</a></li>
+                            <li class="footer__activities-item"><a class="footer__activities-link" href="#">Caiaque</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__blog mx-2">
+                        <h5 class="footer__blog-title h5">Blogs de viagem</h5>
+                        <ul class="footer__blog-lista px-0">
+                            <li class="footer__blog-item"><a class="footer__blog-link" href="#">Guia de viagem para
+                                    Bali</a></li>
+                            <li class="footer__blog-item"><a class="footer__blog-link" href="#">Guia de viagem para
+                                    Canadá </a></li>
+                            <li class="footer__blog-item"><a class="footer__blog-link" href="#">Guia de viagem para
+                                    Peru</a></li>
+                            <li class="footer__blog-item"><a class="footer__blog-link" href="#">Guia de viagem para
+                                    Argentina</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__sobre mx-2">
+                        <h5 class="footer__sobre-title">Nossa Empresa</h5>
+                        <ul class="footer__sobre-lista px-0">
+                            <li class="footer__sobre-item"><a class="footer__sobre-link" href="#">Nossa História</a>
+                            </li>
+                            <li class="footer__sobre-item"><a class="footer__sobre-link" href="#">Trabalhe Conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__contato mx-2">
+                        <h5 class="footer__contato-title">Entre em contato conosco</h5>
+                        <ul class="footer__contato-lista px-0">
+                            <li class="footer__contato-item"><a class="footer__contato-link"
+                                    href="contato.html">Contato</a></li>
+                            <li class="footer__contato-item"><a class="footer__contato-link" href="#">Trabalhe Conosco
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.js"></script>
 </body>
+
 </html>
