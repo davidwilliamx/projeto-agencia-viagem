@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
-
-* {
-    list-style-type: none;
-}
-
 :root {
     --tituloFont: "Libre Franklin", sans-serif;
     --textoFont: "Montserrat", sans-serif;
@@ -14,310 +8,36 @@
     --black: #000000;
     --blackish: #1c1b1f;
 }
-
-.logo__header {
-    width: 110px;
-    height: 36px;
-}
-
-#header {
-    background-color: var(--mintGreen);
-}
-
-/* .nav__list-link {
-  font-family: var(--textoFont);
-  text-decoration: none;
-  color: var(--neutrals, #fff);
-  font-style: normal;
-  line-height: normal;
-}
-
-.login__link {
-  font-family: var(--textoFont);
-  text-decoration: none;
-  color: var(--neutrals, #fff);
-}
-
-.sign-up {
-  font-family: var(--textoFont);
-  color: var(--blackish-green, #121);
-  background: var(--neutrals, #fff);
-  border-radius: 0.5rem;
-} */
-
 #hero {
-    background-image: url("../images/cta1x.png");
+    background-image: url("/assets/images/hero1x.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 599px;
+}
+#hero-promo {
+    background-image: url("/assets/images/hero-promo.png");
     background-size: cover;
-    max-width: 1380px;
-    max-height: 599px;
-    width: auto;
-    height: auto;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 537px;
 }
-
-/* .hero__title {
-  font-family: var(--tituloFont);
-  color: var(--neutrals);
-  text-align: center;
-  font-style: normal;
-  line-height: normal;
-  text-transform: uppercase;
+#hero-contato {
+    background-image: url("/assets/images/hero-contato.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 537px;
 }
-
-.hero__subtitle {
-  font-family: var(--tituloFont);
-  color: var(--neutrals);
-  text-align: center;
-  font-style: normal;
-  line-height: normal;
+.form-contato__btn {
+    background-color: var(--mintGreen);
 }
-
-.hero__offer {
-  font-family: var(--textoFont);
-  color: var(--neutrals);
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-} */
 #form-reserva {
-    margin-top: -50px;
+    margin-top: -140px;
 }
-
-#stay__form-destino {
-    font-family: var(--textoFont);
-    font-style: normal;
-    line-height: normal;
-    gap: 0.625rem;
-    border-radius: 0.25rem;
-    border: 1px solid #79747e;
-    background: #fff;
-    padding: 0.25rem 0rem 0.25rem 1rem;
+#newsletter {
+    margin-top: -150px;
 }
-
-#stay__form-saida {
-    font-family: var(--textoFont);
-    font-style: normal;
-    line-height: normal;
-    gap: 0.625rem;
-    border-radius: 0.25rem;
-    border: 1px solid #79747e;
-    background: #fff;
-    padding: 0.25rem 0rem 0.25rem 1rem;
-}
-
-#stay__form-destino::placeholder,
-#stay__form-saida::placeholder {
-    font-family: var(--textoFont);
-    color: var(--blackish);
-    font-style: normal;
-    line-height: normal;
-}
-
-#stay__form-passageiro {
-    font-family: var(--textoFont);
-    color: var(--blackish);
-    font-style: normal;
-    line-height: normal;
-    gap: 0.625rem;
-    border-radius: 0.25rem;
-    border: 1px solid #79747e;
-    background: #fff;
-    padding: 0.5rem 0rem 0.5rem 1rem;
-}
-
-.stay__form-submit {
-    font-family: var(--tituloFont);
-    font-style: normal;
-    line-height: normal;
-    color: var(--blackish-green, #121);
-    border: 0;
-    border-radius: 0.25rem;
-    background: var(--mint-green, #8dd3bb);
-    cursor: pointer;
-    display: flex;
-    height: 3rem;
-    padding: 0.5rem 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.destiny__title {
-    font-family: var(--textoFont);
-    color: var(--black);
-    height: 2.25rem;
-    align-self: stretch;
-    font-style: normal;
-    line-height: normal;
-}
-
-.destiny__text {
-    font-family: var(--textoFont);
-    color: var(--blackish-green, #121);
-    opacity: 0.7;
-    align-self: stretch;
-    font-style: normal;
-    line-height: normal;
-}
-
-.destiny__btn {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-    background-color: var(--neutrals);
-    border-radius: 0.25rem;
-    border: 1px solid var(--mint-green, #8dd3bb);
-    cursor: pointer;
-    font-style: normal;
-    line-height: normal;
-    display: flex;
-    height: 2.5rem;
-    padding: 0.5rem 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.destiny__card-title {
-    font-family: var(--textoFont);
-    color: var(--blackish-green, #121);
-    align-self: stretch;
-    font-style: normal;
-    line-height: normal;
-    opacity: 0.7;
-}
-
-.destiny__card-link {
-    color: var(--blackish-green, #121);
-    font-family: var(--tituloFont);
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.destiny__card-image {
-    width: 5.625rem;
-    height: 5.625rem;
-}
-
-.blog__atracoes-title {
-    font-family: var(--tituloFont);
-}
-
-.blog__atracoes-text {
-    font-family: var(--textoFont);
-}
-
-.blog__atracoes-btn {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-    border-radius: 0.25rem;
-    background: var(--mint-green, #8dd3bb);
-    cursor: pointer;
-    border: 0;
-}
-
-.blog__hoteis-title {
-    font-family: var(--tituloFont);
-}
-
-.blog__hoteis-text {
-    font-family: var(--textoFont);
-}
-
-.blog__hoteis-btn {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-    border-radius: 0.25rem;
-    background: var(--mint-green, #8dd3bb);
-    cursor: pointer;
-    border: 0;
-}
-
-bg-card-blog {
-    border-radius: 0px 0px 24px 24px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(18, 18, 18, 0.75) 48.67%);
-}
-
-
-.newsletter__title {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-}
-
-.newsletter__subtitle {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-    opacity: 0.8;
-}
-
-.newsletter__text {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-    opacity: 0.7;
-}
-
-.newsletter__form-email {
-    color: var(--blackish);
-    font-family: var(--textoFont);
-    font-style: normal;
-    line-height: normal;
-    gap: 0.625rem;
-    border-radius: 0.25rem;
-    border: 1px solid #79747e;
-    background: #fff;
-    padding: 0.5rem 0rem 0.5rem 1rem;
-}
-
-#newsletter__form-email::placeholder {
-    color: var(--blackish);
-    font-family: var(--textoFont);
-}
-
-.newsletter__form-btn {
-    font-family: var(--textoFont);
-    padding: 0.5rem 1rem;
-    gap: 0.25rem;
-    color: var(--neutrals, #fff);
-    border-radius: 0.25rem;
-    background: var(--blackish-green, #121);
-    cursor: pointer;
-}
-
 #footer {
     background-color: var(--mintGreen);
-}
-
-.footer__links {
-    background-color: var(--mintGreen);
-}
-
-.footer__social-icons {
-    color: var(--blackishGreen);
-}
-
-.footer__destinations-title,
-.footer__activities-title,
-.footer__blog-title,
-.footer__sobre-title,
-.footer__contato-title {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-}
-
-.footer__destinations-link,
-.footer__activities-link,
-.footer__blog-link,
-.footer__sobre-link,
-.footer__contato-link {
-    font-family: var(--tituloFont);
-    color: var(--blackish-green, #121);
-    opacity: 0.7;
-    text-decoration: none;
-}
-
-.footer__logo {
-    width: 120px;
 }
