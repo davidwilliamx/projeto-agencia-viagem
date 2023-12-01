@@ -9,21 +9,21 @@
     --blackish: #1c1b1f;
 }
 #hero {
-    background-image: url("assets/images/hero1x.png");
+    background-image: url("../images/hero1x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 599px;
 }
 #hero-promo {
-    background-image: url("assets/images/hero-promo.png");
+    background-image: url("../images/hero-promo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     height: 537px;
 }
 #hero-contato {
-    background-image: url("assets/images/hero-contato.png");
+    background-image: url("../images/hero-contato.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
